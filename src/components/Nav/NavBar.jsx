@@ -9,13 +9,13 @@ function NavBar() {
         activeKey="/home"
       >
         <Nav.Item>
-          <Nav.Link href="/home">Active</Nav.Link>
+          <Nav.Link href="/home">Menu</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/menu">Link</Nav.Link>
+          <Nav.Link href="/menu">Ubicacion</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/menu2">Link</Nav.Link>
+          <Nav.Link href="/menu2">Contacto</Nav.Link>
         </Nav.Item>
       </Nav>
     </>

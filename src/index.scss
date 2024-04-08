@@ -1,5 +1,11 @@
 @import 'bootstrap/scss/bootstrap';
-
+ *{
+  background-color: #212529;
+ }
 .bg-orange{
   background-color: orange;
+}
+
+.contenedor{
+  background-color: black;
 }

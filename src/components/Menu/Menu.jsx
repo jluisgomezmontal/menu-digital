@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "./menu.scss";
 function Menu() {
   return (
-    <Accordion defaultActiveKey="0" flush>
+    <Accordion defaultActiveKey="0" flush data-bs-theme="dark">
       <Accordion.Item eventKey="0" className="bg-dark text-white">
         <Accordion.Header>
           <h6>Hamburguesas</h6>
