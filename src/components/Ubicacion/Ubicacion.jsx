@@ -15,7 +15,7 @@ export const Ubicacion = () => {
         </a>
       </div>
       <div className="my-5 d-flex justify-content-center gap-5 display-3">
-        <a target="_blank" href="https://www.facebook.com/cloud220690/">
+        <a target="_blank" href="https://m.facebook.com/cloud220690/">
           <FaFacebookF className="facebook" />
         </a>
         <a target="_blank" href="https://www.instagram.com/jluismontalvan/">
