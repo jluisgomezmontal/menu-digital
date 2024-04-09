@@ -10,10 +10,10 @@ function NavBar() {
         variant="underline"
       >
         <Nav.Item>
-          <Nav.Link href="/">Menu</Nav.Link>
+          <Nav.Link>Inicio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link>Nosotros</Nav.Link>
+          <Nav.Link href="/">Menu</Nav.Link>
         </Nav.Item>
       </Nav>
     </>
