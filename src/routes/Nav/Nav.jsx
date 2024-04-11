@@ -12,28 +12,30 @@ export default function NavBotton() {
       <Nav
         data-bs-theme="dark"
         className="justify-content-center bg-dark py-3 fixed-bottom border-top border-primary"
-        activeKey=""
-        variant="underline"
       >
         <Nav.Item>
-          <Link
-            className={
-              pathname === "/" ? "text-warning" : "text-decoration-none"
-            }
-            to="/"
-          >
-            Inicio
-          </Link>
+          <Nav.Link to="/">
+            <Link
+              className={
+                pathname === "/" ? "text-warning" : "text-decoration-none"
+              }
+              to="/"
+            >
+              Inicio
+            </Link>
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Link
-            className={
-              pathname !== "/" ? "text-warning" : "text-decoration-none"
-            }
-            to={menuLink}
-          >
-            Menu
-          </Link>
+          <Nav.Link to={menuLink}>
+            <Link
+              className={
+                pathname !== "/" ? "text-warning" : "text-decoration-none"
+              }
+              to={menuLink}
+            >
+              Menu
+            </Link>
+          </Nav.Link>
         </Nav.Item>
       </Nav>
       <div id="detail">

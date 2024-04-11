@@ -6,7 +6,13 @@ import Navbar from "react-bootstrap/Navbar";
 
 function NavBar() {
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+    <Navbar
+      expand="lg"
+      bg="dark"
+      data-bs-theme="dark"
+      sticky="top"
+      className="border-bottom border-primary"
+    >
       <Container fluid className="bg-dark">
         <Navbar.Brand to="">San Marcos Digital</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
