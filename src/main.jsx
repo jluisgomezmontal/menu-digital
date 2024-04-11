@@ -6,8 +6,8 @@ import App from "./App.jsx";
 import "./index.scss";
 import { Home } from "./routes/Home/Home.jsx";
 import NavBotton from "./routes/Nav/Nav.jsx";
-import { Nelly } from "./Nelly/Nelly.jsx";
 import { store } from "./redux/store.js";
+import { Generico } from "./Generico/Generico.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "nelly",
-        element: <Nelly />,
+        path: "generico",
+        element: <Generico />,
       },
     ],
   },

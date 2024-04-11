@@ -6,13 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 
 function NavBar() {
   return (
-    <Navbar
-      expand="lg"
-      className="bg-body-tertiary"
-      bg="dark"
-      data-bs-theme="dark"
-    >
-      <Container fluid>
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+      <Container fluid className="bg-dark">
         <Navbar.Brand to="">San Marcos Digital</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

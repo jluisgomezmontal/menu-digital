@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { setMenuLink } from "../../redux/slices/menuSlice";
 
 function CardComponent({
+  img = "https://img.freepik.com/vector-gratis/g-purple-logo-business-marca-identidad-diseno-vector-ilustracion_1142-13252.jpg",
   title,
   text,
   link = "tel:+527444292283",
@@ -14,7 +15,10 @@ function CardComponent({
 
   return (
     <Card className="mx-auto mt-5" style={{ maxWidth: "15rem" }}>
-      <Card.Header className="bg-dark text-white">{title}</Card.Header>
+      <Card.Header className="bg-dark text-white">
+        <Card.Img variant="top" src={img} />
+        {title}
+      </Card.Header>
       <Card.Body>
         <Card.Text>{text}</Card.Text>
         <div className="d-grid mx-auto">

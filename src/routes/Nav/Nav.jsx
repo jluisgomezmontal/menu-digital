@@ -11,7 +11,7 @@ export default function NavBotton() {
     <>
       <Nav
         data-bs-theme="dark"
-        className="justify-content-center bg-dark py-3 fixed-bottom "
+        className="justify-content-center bg-dark py-3 fixed-bottom border-top border-primary"
         activeKey=""
         variant="underline"
       >
