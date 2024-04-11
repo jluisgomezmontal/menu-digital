@@ -1,9 +1,12 @@
 import Nav from "react-bootstrap/Nav";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-export default function NavBar() {
+export default function NavBotton() {
+  const { menuLink } = useSelector((state) => state.menu);
+
+  console.log(menuLink);
   let { pathname } = useLocation();
-  console.log(pathname);
   return (
     <>
       <Nav
@@ -25,9 +28,9 @@ export default function NavBar() {
         <Nav.Item>
           <Link
             className={
-              pathname === "/menu" ? "text-warning" : "text-decoration-none"
+              pathname !== "/" ? "text-warning" : "text-decoration-none"
             }
-            to="/menu"
+            to={menuLink}
           >
             Menu
           </Link>

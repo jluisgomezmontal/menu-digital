@@ -1,32 +1,40 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import NavBar from "../../components/NavBar/NavBar";
+import CardComponent from "../../components/Card/Card";
+
 export const Home = () => {
   return (
-    <div className="text-white container py-5 text-center">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h2>Menu Digital</h2>
-      <h5>Creado por Jose Luis Gomez Montalvan</h5>
-      <p>Necesitas un menú digital o alguna aplicación web para tu negocio.</p>
-      <h3>
-        ¡Contáctame y mejora la experiencia de tus clientes con soluciones
-        digitales innovadoras!
-      </h3>
-      <div className="d-grid col-9 mx-auto">
-        <a
-          href="tel:+527444292283"
-          className="btn btn-primary mt-5"
-          role="button"
-        >
-          Llamar
-        </a>
+    <>
+      <NavBar />
+      <div className="text-white container py-5 text-center">
+        <CardComponent
+          title="Creado por Jose Luis Gomez Montalvan"
+          text="¡Contáctame y mejora la experiencia de tus clientes con soluciones
+          digitales innovadoras!"
+        />
       </div>
-    </div>
+      <Container>
+        <Row>
+          <Col>
+            <CardComponent
+              title="Nelly's Frappe"
+              text="¡Ven y Conosenos!"
+              btn="Ir"
+              link="nelly"
+            />
+          </Col>
+          <Col>
+            <CardComponent
+              title="Menu Digital"
+              text="¡Ven y Conosenos!"
+              btn="Ir"
+              link="menu"
+            />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };

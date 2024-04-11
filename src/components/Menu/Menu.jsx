@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import "./menu.scss";
+
 function Menu() {
   return (
     <Accordion defaultActiveKey="0" data-bs-theme="dark">
