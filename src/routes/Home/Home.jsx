@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="container my-5">
+      <div className="container my-5 text-white">
         <h1>San Marcos Digital</h1>
         <p>
           Este proyecto tiene como objetivo digitalizar todos los negocios

@@ -14,7 +14,7 @@ function CardComponent({
   const dispatch = useDispatch();
 
   return (
-    <Card className="mx-auto mt-5" style={{ maxWidth: "15rem" }}>
+    <Card className="mx-auto mt-5 text-white" style={{ maxWidth: "15rem" }}>
       <Card.Header className="bg-dark text-white">
         <Card.Img variant="top" src={img} />
         {title}
