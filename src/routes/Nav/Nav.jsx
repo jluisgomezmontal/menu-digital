@@ -25,7 +25,7 @@ export default function NavBotton() {
             >
               <div className="d-flex flex-column align-items-center">
                 <MdHomeFilled className="fs-3" />
-                Inicio
+                <p className="menu-nav">Inicio</p>
               </div>
             </Link>
           </Nav.Link>
@@ -40,7 +40,7 @@ export default function NavBotton() {
             >
               <div className="d-flex flex-column align-items-center">
                 <PiBrowsersFill className="fs-3" />
-                Menu
+                <p className="menu-nav">Menu</p>
               </div>
             </Link>
           </Nav.Link>
