@@ -1,6 +1,8 @@
 import Nav from "react-bootstrap/Nav";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { MdHomeFilled } from "react-icons/md";
+import { PiBrowsersFill } from "react-icons/pi";
 
 export default function NavBotton() {
   const { menuLink } = useSelector((state) => state.menu);
@@ -11,7 +13,7 @@ export default function NavBotton() {
     <>
       <Nav
         data-bs-theme="dark"
-        className="justify-content-center bg-dark py-3 fixed-bottom border-top border-primary"
+        className="justify-content-center bg-dark fixed-bottom border-top border-primary"
       >
         <Nav.Item>
           <Nav.Link to="/">
@@ -21,7 +23,10 @@ export default function NavBotton() {
               }
               to="/"
             >
-              Inicio
+              <div className="d-flex flex-column align-items-center">
+                <MdHomeFilled className="fs-3" />
+                Inicio
+              </div>
             </Link>
           </Nav.Link>
         </Nav.Item>
@@ -33,7 +38,10 @@ export default function NavBotton() {
               }
               to={menuLink}
             >
-              Menu
+              <div className="d-flex flex-column align-items-center">
+                <PiBrowsersFill className="fs-3" />
+                Menu
+              </div>
             </Link>
           </Nav.Link>
         </Nav.Item>
